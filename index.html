@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{header}
+        .item2{sidebar}
+        .item3{content-1}
+        .item4{content-2}
+        .item5{content-3}
+        .item6{footer}
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+               'header header header header header header'
+               'sidebar content-1 content1 content-1'
+               'sidebar content-2 content-2 content-3 content-3'
+               'footer footer footer footer footer footer';  
+            /*background-color: #000F;*/
+            gap: 10px;
+               
+        }
+        .grid-container > div {
+            padding: 20px;
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            height: 10vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: red;
+        }
+        .item2{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            height: 60vh;      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: blue;
+        }
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            color: white;
+            height: 25vh;      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(9, 184, 253);
+        }
+        .item4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            color: white;
+            height: 27vh;      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        .item5{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            color: white;
+            height: 27vh;      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(6, 245, 18);
+        }
+        .item6{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            color: white;
+            height: 10vh;      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>the grid property</h1>
+   <div class="grid-container">
+    <div class="item1">header</div>
+    <div class="item2">sidebar</div>
+    <div class="item3">content-1</div>
+    <div class="item4">content-2</div>
+    <div class="item5">content-3</div>
+    <div class="item6">footer</div>
+   </div>
+</body>
+</html>
+
+   
+   
